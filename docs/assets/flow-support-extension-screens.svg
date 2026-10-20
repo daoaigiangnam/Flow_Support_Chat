@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="1120" viewBox="0 0 1500 1120">
+<defs>
+ <style>
+ .title{font:700 30px Arial,sans-serif;fill:#14233b}.subtitle{font:400 15px Arial,sans-serif;fill:#64748b}.h{font:700 18px Arial,sans-serif;fill:#172b4d}.body{font:400 13px Arial,sans-serif;fill:#344563}.small{font:400 11px Arial,sans-serif;fill:#6b778c}.tiny{font:400 10px Arial,sans-serif;fill:#6b778c}.btn{font:700 13px Arial,sans-serif;fill:#fff}.pill{font:700 10px Arial,sans-serif;fill:#175cd3}
+ </style>
+</defs>
+<rect width="1500" height="1120" fill="#f4f7fb"/>
+<text x="44" y="52" class="title">FLOW SUPPORT CHAT — BROWSER EXTENSION</text>
+<text x="44" y="80" class="subtitle">Screen concepts 01–03 · Customer entry, AI first response, human handoff · Design proposal v0.2</text>
+<rect x="1230" y="30" width="224" height="30" rx="15" fill="#e0edff"/><text x="1342" y="49" text-anchor="middle" class="pill">CUSTOMER EXPERIENCE</text>
+<!-- panel 1 -->
+<rect x="35" y="115" width="450" height="940" rx="18" fill="#fff" stroke="#d8e1ee"/>
+<text x="58" y="153" class="h">01 · Welcome / New conversation</text>
+<text x="58" y="176" class="small">Goal: make it easy to start a support request</text>
+<rect x="100" y="205" width="320" height="720" rx="18" fill="#f8fafc" stroke="#cbd5e1"/>
+<path d="M118 205 H402 Q420 205 420 223 V290 H100 V223 Q100 205 118 205" fill="#155eef"/>
+<circle cx="130" cy="235" r="13" fill="#fff" opacity=".22"/><path d="M124 235 h12 M130 229 v12" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+<text x="153" y="232" font-family="Arial" font-size="14" font-weight="700" fill="#fff">Support Center</text><text x="153" y="252" font-family="Arial" font-size="10" fill="#dbeafe">We are here to help</text>
+<circle cx="260" cy="345" r="32" fill="#dbeafe"/><path d="M244 344 q16 -22 32 0 v10 h-32 z" fill="#2563eb"/><circle cx="260" cy="335" r="10" fill="#2563eb"/>
+<text x="260" y="401" text-anchor="middle" class="h">How can we help?</text>
+<text x="260" y="425" text-anchor="middle" class="small">Describe your question and our assistant</text><text x="260" y="441" text-anchor="middle" class="small">will help you find the next step.</text>
+<rect x="122" y="470" width="276" height="54" rx="10" fill="#fff" stroke="#d8e1ee"/><circle cx="145" cy="497" r="12" fill="#e0edff"/><text x="145" y="501" text-anchor="middle" font-family="Arial" font-size="12" fill="#155eef">?</text><text x="166" y="493" class="body">Technical support</text><text x="166" y="509" class="tiny">Systems, access, errors</text><text x="380" y="502" class="body">›</text>
+<rect x="122" y="534" width="276" height="54" rx="10" fill="#fff" stroke="#d8e1ee"/><circle cx="145" cy="561" r="12" fill="#dcfae6"/><text x="145" y="565" text-anchor="middle" font-family="Arial" font-size="12" fill="#067647">$</text><text x="166" y="557" class="body">Sales and services</text><text x="166" y="573" class="tiny">Products, quotes, advice</text><text x="380" y="566" class="body">›</text>
+<rect x="122" y="598" width="276" height="54" rx="10" fill="#fff" stroke="#d8e1ee"/><circle cx="145" cy="625" r="12" fill="#f4e8ff"/><text x="145" y="629" text-anchor="middle" font-family="Arial" font-size="12" fill="#6941c6">H</text><text x="166" y="621" class="body">Other request</text><text x="166" y="637" class="tiny">General questions</text><text x="380" y="630" class="body">›</text>
+<rect x="122" y="682" width="276" height="90" rx="10" fill="#fff" stroke="#d8e1ee"/><text x="138" y="706" class="small">Your message</text><text x="138" y="729" class="tiny">Type a question or describe an issue...</text><path d="M138 741 H380" stroke="#e2e8f0"/>
+<rect x="122" y="790" width="276" height="44" rx="9" fill="#155eef"/><text x="260" y="817" text-anchor="middle" class="btn">Start conversation</text>
+<text x="260" y="866" text-anchor="middle" class="tiny">By continuing, you agree to the support privacy notice.</text>
+<text x="58" y="978" class="body">Primary action: Start conversation</text><text x="58" y="1000" class="small">Validation: require non-empty message or selected category.</text>
+<!-- panel 2 -->
+<rect x="525" y="115" width="450" height="940" rx="18" fill="#fff" stroke="#d8e1ee"/>
+<text x="548" y="153" class="h">02 · AI first response</text><text x="548" y="176" class="small">Goal: answer quickly and keep context</text>
+<rect x="590" y="205" width="320" height="720" rx="18" fill="#f8fafc" stroke="#cbd5e1"/>
+<path d="M608 205 H892 Q910 205 910 223 V277 H590 V223 Q590 205 608 205" fill="#155eef"/>
+<text x="612" y="234" font-family="Arial" font-size="14" font-weight="700" fill="#fff">Support Assistant</text><circle cx="612" cy="254" r="4" fill="#86efac"/><text x="623" y="258" font-family="Arial" font-size="10" fill="#dbeafe">Online · AI assisted</text>
+<rect x="610" y="301" width="244" height="60" rx="12" fill="#e8efff"/><text x="624" y="324" class="body">I cannot access my account</text><text x="624" y="343" class="tiny">You · 09:41</text>
+<rect x="628" y="376" width="262" height="136" rx="12" fill="#fff" stroke="#d8e1ee"/><text x="644" y="400" class="body">I can help troubleshoot that.</text><text x="644" y="424" class="body">Please check whether you can</text><text x="644" y="443" class="body">sign in from another browser.</text><text x="644" y="477" class="tiny">AI response · 09:41</text><rect x="644" y="486" width="104" height="17" rx="8" fill="#dcfae6"/><text x="696" y="498" text-anchor="middle" font-family="Arial" font-size="9" fill="#067647">Suggested answer</text>
+<text x="610" y="548" class="small">Was this helpful?</text><rect x="610" y="562" width="105" height="34" rx="8" fill="#fff" stroke="#cbd5e1"/><text x="662" y="583" text-anchor="middle" class="body">Yes, thanks</text><rect x="724" y="562" width="166" height="34" rx="8" fill="#fff" stroke="#cbd5e1"/><text x="807" y="583" text-anchor="middle" class="body">Talk to a person</text>
+<rect x="610" y="626" width="280" height="88" rx="10" fill="#fff" stroke="#d8e1ee"/><text x="626" y="650" class="small">Message</text><text x="626" y="673" class="tiny">Add details or a follow-up...</text><path d="M626 685 H872" stroke="#e2e8f0"/><circle cx="865" cy="699" r="10" fill="#155eef"/><path d="M860 699 l4 3 6 -7" stroke="#fff" stroke-width="1.5" fill="none"/>
+<text x="750" y="766" text-anchor="middle" class="small">Conversation ID is assigned by the server.</text><text x="750" y="785" text-anchor="middle" class="small">Do not expose internal AI prompts or secrets.</text>
+<text x="548" y="978" class="body">Primary action: answer, ask follow-up, or hand off</text><text x="548" y="1000" class="small">If AI is unavailable, show a clear fallback and preserve the message.</text>
+<!-- panel 3 -->
+<rect x="1015" y="115" width="450" height="940" rx="18" fill="#fff" stroke="#d8e1ee"/>
+<text x="1038" y="153" class="h">03 · Human handoff</text><text x="1038" y="176" class="small">Goal: transfer safely without losing context</text>
+<rect x="1080" y="205" width="320" height="720" rx="18" fill="#f8fafc" stroke="#cbd5e1"/>
+<path d="M1098 205 H1382 Q1400 205 1400 223 V277 H1080 V223 Q1080 205 1098 205" fill="#155eef"/>
+<text x="1102" y="234" font-family="Arial" font-size="14" font-weight="700" fill="#fff">Support Center</text><circle cx="1102" cy="254" r="4" fill="#fbbf24"/><text x="1113" y="258" font-family="Arial" font-size="10" fill="#dbeafe">Connecting you to a team</text>
+<rect x="1100" y="301" width="250" height="56" rx="12" fill="#e8efff"/><text x="1114" y="324" class="body">Please connect me to support</text><text x="1114" y="343" class="tiny">You · 09:43</text>
+<rect x="1100" y="374" width="280" height="92" rx="12" fill="#fff" stroke="#d8e1ee"/><text x="1116" y="398" class="body">Understood. I am passing this</text><text x="1116" y="417" class="body">conversation to the right team.</text><text x="1116" y="446" class="tiny">Your previous messages are included.</text>
+<rect x="1100" y="487" width="280" height="66" rx="10" fill="#fffaeb" stroke="#fedf89"/><circle cx="1120" cy="509" r="5" fill="#d97706"/><text x="1134" y="512" class="body">Waiting for an available agent</text><text x="1116" y="535" class="tiny">You can continue adding details below.</text>
+<rect x="1100" y="574" width="280" height="94" rx="10" fill="#fff" stroke="#d8e1ee"/><text x="1116" y="598" class="small">Add details for the support team</text><text x="1116" y="621" class="tiny">Affected service, time, error message...</text><path d="M1116 636 H1364" stroke="#e2e8f0"/><text x="1116" y="654" class="tiny">Attachments are subject to policy.</text>
+<rect x="1100" y="690" width="280" height="44" rx="9" fill="#155eef"/><text x="1240" y="717" text-anchor="middle" class="btn">Send additional details</text>
+<rect x="1100" y="753" width="280" height="52" rx="9" fill="#fff" stroke="#cbd5e1"/><text x="1240" y="775" text-anchor="middle" class="body">View request status</text><text x="1240" y="791" text-anchor="middle" class="tiny">Ticket link appears only when available</text>
+<text x="1240" y="866" text-anchor="middle" class="tiny">Do not promise a response time unless configured.</text>
+<text x="1038" y="978" class="body">Primary action: join the correct support queue</text><text x="1038" y="1000" class="small">No valid assignment: stay in triage, never assign randomly.</text>
+</svg>
