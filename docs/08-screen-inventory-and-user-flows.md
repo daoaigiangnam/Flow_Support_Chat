@@ -5,6 +5,14 @@
 - Status: Proposed screen inventory and flows for review.
 - Related: docs 01–07.
 
+## Visual reference
+
+The image below is a concept mockup for the three product surfaces. Labels, sample values, names and statuses are illustrative only; they do not approve business rules or production data.
+
+![Flow Support Chat UI overview](assets/flow-support-ui-overview.svg)
+
+[Open the SVG mockup](assets/flow-support-ui-overview.svg)
+
 ## 1. Reading this document
 
 - **Baseline:** needed by the current business requirements.
