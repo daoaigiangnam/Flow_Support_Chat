@@ -2,6 +2,14 @@
 
 Tài liệu nghiệp vụ, kỹ thuật và UI/UX cho Browser Extension Chat Support, AI First Response, định tuyến, phân công nhân sự và tích hợp Bitrix24.
 
+## UI/UX — Hình ảnh giao diện mẫu
+
+Đây là **concept mockup** để thống nhất hướng thiết kế; số liệu, tên mẫu và trạng thái minh họa không phải dữ liệu production hoặc chính sách nghiệp vụ đã được phê duyệt.
+
+![Flow Support Chat UI overview](docs/assets/flow-support-ui-overview.svg)
+
+[Mở hình ảnh giao diện SVG riêng](docs/assets/flow-support-ui-overview.svg)
+
 ## Bộ tài liệu cho đội Dev
 
 ### Nghiệp vụ và kỹ thuật
@@ -21,12 +29,12 @@ Tài liệu nghiệp vụ, kỹ thuật và UI/UX cho Browser Extension Chat Sup
 
 - Product Owner/nghiệp vụ: xác nhận các mục OPEN, ma trận M-Tech Care, policy Ticket, SLA, quyền và các đề xuất UI/UX.
 - Tech Lead: duyệt architecture decision records, API contract, object Bitrix24 và stack frontend.
-- Designer/Frontend: dùng tài liệu 07–09 làm baseline thiết kế; màu sắc và breakpoint là đề xuất cần review, không phải brand guideline đã được duyệt.
+- Designer/Frontend: dùng tài liệu 07–09 và hình mockup làm baseline để review; màu sắc và bố cục vẫn là đề xuất, không phải brand guideline đã được duyệt.
 - Developer: triển khai theo requirement ID/module; không tự suy diễn quyết định còn mở.
 - QA: dùng tài liệu 03, 04 và 09; ghi môi trường, build/version, PASS/FAIL, bằng chứng và defect ID.
 
 ## Trạng thái dự án
 
-Đã có baseline nghiệp vụ, chức năng, acceptance tests, implementation blueprint, API/data contract draft và UI/UX design proposal. UI/UX hiện ở mức đặc tả Markdown, chưa có mockup/prototype được duyệt hoặc code giao diện. Chưa có schema database/OpenAPI contract cuối cùng trong bộ tài liệu này.
+Đã có baseline nghiệp vụ, chức năng, acceptance tests, implementation blueprint, API/data contract draft, UI/UX design proposal và **hình concept giao diện mẫu**. Mockup chưa phải prototype tương tác được duyệt hoặc code giao diện thực tế. Chưa có schema database/OpenAPI contract cuối cùng trong bộ tài liệu này.
 
 Trước khi chốt UI production và triển khai tích hợp Bitrix24, cần xác minh: framework frontend và browser target; auth/session; realtime transport; role matrix; loại đối tượng Ticket, field/status mapping và quyền API Bitrix24; ma trận nhân sự thực tế; SLA, file policy và kênh phản hồi. Không hard-code các quyết định chưa được duyệt.
