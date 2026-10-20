@@ -10,6 +10,13 @@ Tài liệu nghiệp vụ, kỹ thuật và UI/UX cho Browser Extension Chat Sup
 
 [Mở hình ảnh giao diện SVG riêng](docs/assets/flow-support-ui-overview.svg)
 
+### Browser Extension — thiết kế chi tiết
+
+![Browser Extension screens](docs/assets/flow-support-extension-screens.svg)
+
+- [Đặc tả từng màn hình và luồng xử lý Browser Extension](docs/10-browser-extension-screen-specifications.md)
+- [Mở hình giao diện Extension riêng](docs/assets/flow-support-extension-screens.svg)
+
 ## Bộ tài liệu cho đội Dev
 
 ### Nghiệp vụ và kỹ thuật
