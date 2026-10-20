@@ -35,6 +35,7 @@ Tài liệu 12 tổng hợp 8 luồng chính: tiếp nhận, AI First Response, 
 ## Bộ tài liệu cho đội Dev
 
 ### Nghiệp vụ và kỹ thuật
+0. [14 — Bộ câu hỏi nghiệp vụ và Decision Register](docs/14-business-questions-and-decision-register.md) — Bộ câu hỏi rà soát theo nhóm nghiệp vụ, các quyết định P0/P1, trạng thái OPEN/APPROVED, checklist và mẫu ghi nhận phê duyệt. Đây là tài liệu cần dùng để chốt chính sách trước khi khóa nghiệp vụ.
 1. [01 — Đặc tả nghiệp vụ tổng thể](docs/01-business-workflow-specification.md) — Luồng nghiệp vụ, vai trò, ngoại lệ, bảo mật và quyết định còn mở.
 2. [02 — Đặc tả yêu cầu chức năng](docs/02-functional-requirements.md) — Yêu cầu có ID theo module và yêu cầu phi chức năng.
 3. [03 — Bảng quyết định và chuyển trạng thái](docs/03-decision-tables-and-state-transitions.md) — Routing, assignment, Ticket, retry và lifecycle.
@@ -46,6 +47,12 @@ Tài liệu 12 tổng hợp 8 luồng chính: tiếp nhận, AI First Response, 
 7. [07 — UI Design System](docs/07-ui-design-system.md) — Palette đề xuất, typography, spacing, component catalog, responsive, accessibility và các quyết định mở.
 8. [08 — Screen Inventory & User Flows](docs/08-screen-inventory-and-user-flows.md) — Danh sách màn hình Extension, Support Dashboard, Admin Portal; user flows, UI states và traceability.
 9. [09 — UI/UX Implementation & Review Checklist](docs/09-ui-ux-implementation-checklist.md) — Definition of Ready/Done, UI test matrix và delivery gates.
+
+### Chốt nghiệp vụ trước khi triển khai
+
+- Bắt đầu từ [14 — Bộ câu hỏi nghiệp vụ và Decision Register](docs/14-business-questions-and-decision-register.md).
+- Ưu tiên chốt các quyết định P0: kênh làm việc của nhân viên, danh tính khách hàng, vòng đời hội thoại, mô hình Ticket Bitrix24, ma trận phân công, AI handoff, quyền, SLA và quy tắc đóng/mở lại.
+- Không coi phương án gợi ý trong tài liệu là chính sách đã duyệt. Mọi quyết định APPROVED phải có người phê duyệt, ngày duyệt và được phản ánh nhất quán vào requirements, flows và acceptance tests.
 
 ## Cách sử dụng
 
