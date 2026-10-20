@@ -74,3 +74,7 @@ Tài liệu 12 tổng hợp 8 luồng chính: tiếp nhận, AI First Response, 
 Trước khi chốt UI production và triển khai tích hợp Bitrix24, cần xác minh: framework frontend và browser target; auth/session; realtime transport; role matrix; loại đối tượng Ticket, field/status mapping và quyền API Bitrix24; ma trận nhân sự thực tế; SLA, file policy và kênh phản hồi. Không hard-code các quyết định chưa được duyệt.
 
 - [16 — Requirement Traceability Matrix](docs/16-requirement-traceability-matrix.md) — Lập chỉ mục 73 requirement ID, gợi ý test case theo module và nêu rõ phần cần QA xác minh. Mapping ứng viên chưa phải bằng chứng nghiệm thu.
+
+## Một link để xem toàn bộ vận hành
+
+- [17 — Sổ tay vận hành tổng thể Flow Support Chat](docs/17-master-operations-guide.md) — Một link tổng hợp master lifecycle, 9 luồng vận hành, sơ đồ, hình ảnh UI, toàn bộ tài liệu nguồn, test và release gates.
