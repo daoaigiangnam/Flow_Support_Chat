@@ -13,6 +13,12 @@ The image below is a concept mockup for the three product surfaces. Labels, samp
 
 [Open the SVG mockup](assets/flow-support-ui-overview.svg)
 
+## Browser Extension — detailed screen design
+
+![Browser Extension screens](assets/flow-support-extension-screens.svg)
+
+See [detailed Browser Extension screen specifications and processing flows](10-browser-extension-screen-specifications.md).
+
 ## 1. Reading this document
 
 - **Baseline:** needed by the current business requirements.
