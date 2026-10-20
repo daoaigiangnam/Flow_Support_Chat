@@ -37,7 +37,7 @@
 <text x="542" y="970" class="body">Primary action: send a verified reply</text><text x="542" y="990" class="small">AI draft is advisory; the agent reviews before sending.</text>
 <!-- screen 3 -->
 <rect x="1010" y="105" width="460" height="950" rx="16" fill="#fff" stroke="#d8e1ee"/>
-<text x="1032" y="140" class="h">03 · Customer context & Ticket</text><text x="1032" y="160" class="small">Verify customer details and formal tracking status</text>
+<text x="1032" y="140" class="h">03 · Customer context &amp; Ticket</text><text x="1032" y="160" class="small">Verify customer details and formal tracking status</text>
 <rect x="1028" y="180" width="424" height="825" rx="9" fill="#f8fafc" stroke="#d8e1ee"/>
 <rect x="1028" y="180" width="424" height="54" rx="9" fill="#fff"/><path d="M1028 234 H1452" stroke="#d8e1ee"/><text x="1048" y="212" class="body" font-weight="700">Customer &amp; Ticket details</text>
 <rect x="1045" y="250" width="390" height="150" rx="10" fill="#fff" stroke="#d8e1ee"/><circle cx="1080" cy="282" r="19" fill="#dbeafe"/><text x="1080" y="286" text-anchor="middle" class="body">L</text><text x="1110" y="278" class="body" font-weight="700">Linh Nguyen</text><text x="1110" y="296" class="small">Customer ID: verified by backend</text><path d="M1062 316 H1418" stroke="#e2e8f0"/><text x="1062" y="338" class="small">Channel</text><text x="1175" y="338" class="body">Browser Extension</text><text x="1062" y="360" class="small">Category</text><text x="1175" y="360" class="body">Technical support</text><text x="1062" y="382" class="small">Conversation</text><text x="1175" y="382" class="body">CONV-1042</text>
