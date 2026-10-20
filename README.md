@@ -54,6 +54,11 @@ Tài liệu 12 tổng hợp 8 luồng chính: tiếp nhận, AI First Response, 
 - Ưu tiên chốt các quyết định P0: kênh làm việc của nhân viên, danh tính khách hàng, vòng đời hội thoại, mô hình Ticket Bitrix24, ma trận phân công, AI handoff, quyền, SLA và quy tắc đóng/mở lại.
 - Không coi phương án gợi ý trong tài liệu là chính sách đã duyệt. Mọi quyết định APPROVED phải có người phê duyệt, ngày duyệt và được phản ánh nhất quán vào requirements, flows và acceptance tests.
 
+
+### Rà soát tính đầy đủ nghiệp vụ
+
+- [15 — Business Completeness Audit](docs/15-business-completeness-audit.md) — Rà soát bộ tài liệu 01–14, phát hiện rủi ro P0/P1, ma trận truy vết, phạm vi MVP đề xuất và release gates. Đây là audit draft; các mục cần PO/Tech Lead xác nhận chưa được coi là đã đóng.
+
 ## Cách sử dụng
 
 - Product Owner/nghiệp vụ: xác nhận các mục OPEN, ma trận M-Tech Care, policy Ticket, SLA, quyền và các đề xuất UI/UX.
