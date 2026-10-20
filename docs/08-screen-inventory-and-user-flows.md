@@ -19,6 +19,12 @@ The image below is a concept mockup for the three product surfaces. Labels, samp
 
 See [detailed Browser Extension screen specifications and processing flows](10-browser-extension-screen-specifications.md).
 
+## Support Dashboard — detailed screen design
+
+![Support Dashboard screens](assets/flow-support-dashboard-screens.svg)
+
+See [detailed Support Dashboard screen specifications and processing flows](11-support-dashboard-screen-specifications.md).
+
 ## 1. Reading this document
 
 - **Baseline:** needed by the current business requirements.
