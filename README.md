@@ -24,6 +24,14 @@ Tài liệu nghiệp vụ, kỹ thuật và UI/UX cho Browser Extension Chat Sup
 - [Đặc tả màn hình và luồng xử lý Support Dashboard](docs/11-support-dashboard-screen-specifications.md)
 - [Mở hình Support Dashboard riêng](docs/assets/flow-support-dashboard-screens.svg)
 
+### Bộ luồng hỗ trợ hoàn chỉnh — bản rà soát
+
+- [12 — Toàn bộ luồng hỗ trợ, state model và release gates](docs/12-complete-support-flows.md)
+- [13 — Đặc tả Admin Portal và luồng cấu hình](docs/13-admin-portal-screen-specifications.md)
+- [Hình giao diện Admin Portal](docs/assets/flow-support-admin-screens.svg)
+
+Tài liệu 12 tổng hợp 8 luồng chính: tiếp nhận, AI First Response, handoff/phân công, Ticket Bitrix24, SLA/leo thang, giải quyết/đóng/mở lại, phân quyền/kiểm toán và khôi phục/đối soát. Các chính sách chưa được xác nhận được đánh dấu là quyết định mở; không coi đây là chính sách production đã phê duyệt.
+
 ## Bộ tài liệu cho đội Dev
 
 ### Nghiệp vụ và kỹ thuật
