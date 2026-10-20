@@ -17,6 +17,13 @@ Tài liệu nghiệp vụ, kỹ thuật và UI/UX cho Browser Extension Chat Sup
 - [Đặc tả từng màn hình và luồng xử lý Browser Extension](docs/10-browser-extension-screen-specifications.md)
 - [Mở hình giao diện Extension riêng](docs/assets/flow-support-extension-screens.svg)
 
+### Support Dashboard — thiết kế chi tiết
+
+![Support Dashboard screens](docs/assets/flow-support-dashboard-screens.svg)
+
+- [Đặc tả màn hình và luồng xử lý Support Dashboard](docs/11-support-dashboard-screen-specifications.md)
+- [Mở hình Support Dashboard riêng](docs/assets/flow-support-dashboard-screens.svg)
+
 ## Bộ tài liệu cho đội Dev
 
 ### Nghiệp vụ và kỹ thuật
