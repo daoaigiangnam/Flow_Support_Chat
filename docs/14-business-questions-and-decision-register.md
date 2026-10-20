@@ -439,11 +439,244 @@ Không đánh giá nghiệp vụ là hoàn tất chỉ vì đã có sơ đồ lu
 - Có tình huống nghiệm thu cho luồng bình thường, lỗi, ngoại lệ và khôi phục.
 - Product Owner ký xác nhận baseline nghiệp vụ.
 
-## 8. Lịch sử thay đổi
+
+
+## 9. Bổ sung rà soát nghiệp vụ vận hành thực tế
+
+Phần này mở rộng bộ câu hỏi hiện có để bao phủ danh mục dịch vụ, hợp đồng, điều phối công việc, quan hệ giữa yêu cầu, giao tiếp, tri thức AI, KPI, quản lý thay đổi và các tình huống ngoại lệ. Các mục mới đều **OPEN** cho đến khi được chủ nghiệp vụ xác nhận.
+
+### L. Danh mục dịch vụ và phân loại loại yêu cầu
+
+**BIZ-1201 — Danh mục dịch vụ chính thức gồm những gì?**
+- Câu hỏi: Những dịch vụ nào được hỗ trợ trong hệ thống; dịch vụ nào thuộc Technical, Sales, HR hoặc nhóm khác?
+- Cần xác nhận: Mã dịch vụ, tên, mô tả, chủ sở hữu, khách hàng áp dụng và trạng thái hoạt động.
+- Trạng thái: OPEN.
+
+**BIZ-1202 — Phân biệt Incident, Service Request, Question và Complaint như thế nào?**
+- Câu hỏi: Các loại yêu cầu có quy trình, ưu tiên, SLA hoặc trường bắt buộc khác nhau không?
+- Cần xác nhận: Định nghĩa nghiệp vụ và ví dụ điển hình cho từng loại.
+- Trạng thái: OPEN.
+
+**BIZ-1203 — Có loại yêu cầu nào cần phê duyệt trước khi thực hiện không?**
+- Câu hỏi: Yêu cầu cấp quyền, thay đổi cấu hình, mua dịch vụ, thay đổi nhân sự hoặc yêu cầu có chi phí cần ai duyệt?
+- Cần xác nhận: Người yêu cầu, người duyệt, bằng chứng phê duyệt, từ chối và hủy yêu cầu.
+- Trạng thái: OPEN.
+
+**BIZ-1204 — Trường thông tin bắt buộc theo loại dịch vụ là gì?**
+- Câu hỏi: Mỗi loại yêu cầu cần thông tin tối thiểu nào để phân loại và xử lý?
+- Cần xác nhận: Trường bắt buộc, trường tùy chọn, quy tắc xác thực và cách xử lý khi khách chưa cung cấp đủ thông tin.
+- Trạng thái: OPEN.
+
+### M. Khách hàng, hợp đồng và phạm vi dịch vụ
+
+**BIZ-1301 — Mỗi khách hàng có danh mục dịch vụ và đầu mối riêng không?**
+- Câu hỏi: Một tổ chức có nhiều chi nhánh, phòng ban và người đại diện không; ai được quyền gửi yêu cầu thay mặt tổ chức?
+- Trạng thái: OPEN.
+
+**BIZ-1302 — Hợp đồng ảnh hưởng đến quy tắc hỗ trợ như thế nào?**
+- Câu hỏi: Phạm vi dịch vụ, giờ hỗ trợ, SLA, ưu tiên và cấp escalation có khác nhau theo hợp đồng không?
+- Trạng thái: OPEN.
+
+**BIZ-1303 — Khi hợp đồng hết hạn hoặc thay đổi phạm vi thì sao?**
+- Câu hỏi: Yêu cầu mới có bị giới hạn; yêu cầu đang mở tiếp tục được xử lý theo chính sách nào; ai quyết định ngoại lệ?
+- Trạng thái: OPEN.
+
+**BIZ-1304 — Có cần quản lý đầu mối khách hàng và người nhận thông báo riêng biệt không?**
+- Câu hỏi: Người gửi yêu cầu, người liên hệ kỹ thuật, người phê duyệt và người nhận báo cáo có thể là các cá nhân khác nhau không?
+- Trạng thái: OPEN.
+
+### N. Quản lý khối lượng, bàn giao và trách nhiệm xuyên suốt
+
+**BIZ-1401 — Ai chịu trách nhiệm cuối cùng trong từng trạng thái?**
+- Câu hỏi: Ai chịu trách nhiệm khi yêu cầu ở Triage, Queued, Assigned, In Progress, Waiting for Customer, Waiting for Third Party, Resolved hoặc Reopened?
+- Cần xác nhận: Mỗi trạng thái phải có owner hoặc vai trò chịu trách nhiệm rõ ràng.
+- Trạng thái: OPEN.
+
+**BIZ-1402 — Có giới hạn số yêu cầu đang xử lý trên mỗi nhân viên không?**
+- Câu hỏi: Khi quá tải, có ngăn nhận thêm, đưa vào hàng đợi hoặc điều phối lại không?
+- Trạng thái: OPEN.
+
+**BIZ-1403 — Quy trình bàn giao ca/nghỉ phép là gì?**
+- Câu hỏi: Ai tiếp nhận danh sách yêu cầu đang mở; cần ghi lại tiến độ, việc tiếp theo, rủi ro SLA và đầu mối liên hệ nào?
+- Trạng thái: OPEN.
+
+**BIZ-1404 — Điều kiện nào kích hoạt điều phối lại?**
+- Câu hỏi: Không nhận việc, không cập nhật tiến độ, nghỉ đột xuất, quá tải, thiếu kỹ năng hoặc gần vi phạm SLA có kích hoạt điều phối lại không?
+- Cần xác nhận: Ngưỡng, người phê duyệt và cách bảo toàn trách nhiệm cho tới khi người mới chấp nhận.
+- Trạng thái: OPEN.
+
+**BIZ-1405 — Nhiều nhóm cùng xử lý thì ai điều phối?**
+- Câu hỏi: Có một owner chính và các nhóm phối hợp hay mỗi nhóm có Ticket riêng; ai tổng hợp kết quả và giao tiếp với khách?
+- Trạng thái: OPEN.
+
+### O. Quan hệ yêu cầu, sự cố chung và hủy yêu cầu
+
+**BIZ-1501 — Hai yêu cầu cùng nguyên nhân có được liên kết không?**
+- Câu hỏi: Khi nhiều khách báo cùng một sự cố, có tạo một bản ghi sự cố chung và liên kết các yêu cầu cá nhân không?
+- Cần xác nhận: Ai có quyền xác nhận sự cố chung, cách thông báo ảnh hưởng và cách đóng các yêu cầu liên quan.
+- Trạng thái: OPEN.
+
+**BIZ-1502 — Quy tắc Ticket cha/con hoặc Ticket phụ thuộc là gì?**
+- Câu hỏi: Có cần mô hình quan hệ cho yêu cầu lớn, tác vụ con hoặc yêu cầu chờ một Ticket khác không?
+- Trạng thái: OPEN.
+
+**BIZ-1503 — Khi nào một yêu cầu được đánh dấu trùng, hợp nhất hoặc liên quan?**
+- Câu hỏi: Ai quyết định; giữ lịch sử và người gửi ban đầu thế nào; có thông báo cho khách không?
+- Trạng thái: OPEN.
+
+**BIZ-1504 — Khách hoặc nhân viên có thể hủy yêu cầu không?**
+- Câu hỏi: Điều kiện hủy, quyền hủy, lý do bắt buộc, xử lý công việc đã bắt đầu và quy tắc khôi phục nếu hủy nhầm.
+- Trạng thái: OPEN.
+
+### P. Giao tiếp, tiến độ và khiếu nại
+
+**BIZ-1601 — Khi nào nhân viên phải cập nhật tiến độ cho khách?**
+- Câu hỏi: Theo sự kiện, theo SLA, theo lịch cập nhật hoặc khi có thay đổi đáng kể?
+- Trạng thái: OPEN.
+
+**BIZ-1602 — Có cần mẫu thông báo chuẩn theo trạng thái không?**
+- Câu hỏi: Nội dung tiếp nhận, đang xử lý, chờ thông tin, chờ bên thứ ba, chuyển cấp, giải quyết, đóng và bảo trì được chuẩn hóa thế nào?
+- Trạng thái: OPEN.
+
+**BIZ-1603 — Ai được phép gửi phản hồi chính thức?**
+- Câu hỏi: Assignee, Primary, Supervisor hay thành viên nhóm đều được gửi; có cần phân biệt nội dung nháp và đã gửi?
+- Trạng thái: OPEN.
+
+**BIZ-1604 — Quy trình khiếu nại hoặc không đồng ý kết quả là gì?**
+- Câu hỏi: Khi khách không hài lòng, ai xem xét lại, có chuyển cấp độc lập không và thời hạn phản hồi là bao lâu?
+- Trạng thái: OPEN.
+
+**BIZ-1605 — Có cần xác nhận khách đã đọc hoặc đã nhận thông báo không?**
+- Câu hỏi: Những thông báo nào cần acknowledgement; nếu không xác nhận thì có kênh dự phòng hoặc cảnh báo không?
+- Trạng thái: OPEN.
+
+### Q. Quản trị kho tri thức AI
+
+**BIZ-1701 — Ai sở hữu và phê duyệt tài liệu tri thức?**
+- Câu hỏi: Ai tạo, duyệt, xuất bản, sửa và ngừng sử dụng từng nguồn tri thức?
+- Trạng thái: OPEN.
+
+**BIZ-1702 — Tri thức được phân quyền theo khách hàng/dịch vụ như thế nào?**
+- Câu hỏi: Có tài liệu chỉ áp dụng cho một khách hàng, hợp đồng, nhóm hoặc vai trò không?
+- Nguyên tắc: AI chỉ được truy xuất nguồn mà người dùng và luồng nghiệp vụ được phép sử dụng.
+- Trạng thái: OPEN.
+
+**BIZ-1703 — Quản lý phiên bản và ngày hiệu lực tài liệu ra sao?**
+- Câu hỏi: Khi tài liệu mới được duyệt, khi nào bản cũ bị ngừng dùng; có cần lưu phiên bản dùng để tạo câu trả lời không?
+- Trạng thái: OPEN.
+
+**BIZ-1704 — Quy trình xử lý câu trả lời AI sai là gì?**
+- Câu hỏi: Ai nhận phản ánh, đánh giá mức độ ảnh hưởng, sửa nguồn tri thức/prompt và xác nhận đã khắc phục?
+- Trạng thái: OPEN.
+
+**BIZ-1705 — Khi AI không có căn cứ hoặc nguồn tri thức mâu thuẫn thì làm gì?**
+- Câu hỏi: Hỏi bổ sung, nêu rõ chưa đủ thông tin hay chuyển người thật; ai giải quyết xung đột nguồn?
+- Trạng thái: OPEN.
+
+### R. Định nghĩa báo cáo, KPI và hiệu quả
+
+**BIZ-1801 — Định nghĩa chuẩn của từng trạng thái báo cáo là gì?**
+- Câu hỏi: New, Open, In Progress, Waiting, Overdue, Resolved, Closed, Reopened được đếm theo trạng thái hiện tại hay theo sự kiện lịch sử?
+- Trạng thái: OPEN.
+
+**BIZ-1802 — Thời gian phản hồi và giải quyết được tính từ mốc nào?**
+- Câu hỏi: Thời điểm gửi, thời điểm server tiếp nhận, thời điểm Ticket tạo thành công hay thời điểm nhân viên nhận việc?
+- Trạng thái: OPEN.
+
+**BIZ-1803 — Phân bổ công việc khi nhiều người tham gia thế nào?**
+- Câu hỏi: KPI tính cho owner chính, người trực tiếp xử lý, nhóm hay phân bổ theo thời gian/đóng góp?
+- Lưu ý: Không mặc định chia đều nếu chưa có chính sách.
+- Trạng thái: OPEN.
+
+**BIZ-1804 — Yêu cầu mở lại hoặc bị trùng được tính ra sao?**
+- Câu hỏi: Đếm như yêu cầu mới, lần xử lý tiếp theo hay chỉ là một sự kiện trong cùng yêu cầu?
+- Trạng thái: OPEN.
+
+**BIZ-1805 — Ai được xem, xuất và chia sẻ báo cáo?**
+- Câu hỏi: Phạm vi theo khách hàng, nhóm, cá nhân; có dữ liệu nhạy cảm; ai phê duyệt xuất dữ liệu?
+- Trạng thái: OPEN.
+
+**BIZ-1806 — Bộ chỉ số đánh giá AI và trải nghiệm khách hàng là gì?**
+- Câu hỏi: Tỷ lệ tự giải quyết, handoff, phản hồi sai, khiếu nại, đánh giá khách hàng và tỷ lệ phải mở lại — chỉ số nào là bắt buộc?
+- Trạng thái: OPEN.
+
+### S. Quản lý thay đổi cấu hình và quy trình
+
+**BIZ-1901 — Thay đổi quy tắc có áp dụng cho yêu cầu đang mở không?**
+- Câu hỏi: Mapping, SLA, danh mục dịch vụ hoặc chính sách đóng mới áp dụng cho yêu cầu mới hay cả yêu cầu hiện hữu?
+- Trạng thái: OPEN.
+
+**BIZ-1902 — Thay đổi nào cần phê duyệt kép?**
+- Câu hỏi: Thay đổi quyền, SLA, routing, prompt AI, tri thức hoặc kết nối Bitrix24 có cần người thứ hai duyệt không?
+- Trạng thái: OPEN.
+
+**BIZ-1903 — Có cần lưu lịch sử phiên bản cấu hình và rollback nghiệp vụ không?**
+- Câu hỏi: Ai được khôi phục; cách đánh giá ảnh hưởng đến yêu cầu đang mở; cần lưu lý do và người duyệt nào?
+- Trạng thái: OPEN.
+
+**BIZ-1904 — Khi thêm khách hàng/dịch vụ mới, quy trình đưa vào hoạt động là gì?**
+- Câu hỏi: Cần cấu hình nhóm, mapping nhân sự, SLA, quyền, tri thức AI, thông báo và test nghiệm thu nào trước khi kích hoạt?
+- Trạng thái: OPEN.
+
+### T. Các tình huống ngoại lệ bổ sung
+
+**BIZ-2001 — Khách gửi yêu cầu ngoài giờ hỗ trợ thì sao?**
+- Câu hỏi: AI vẫn trả lời; yêu cầu vào hàng đợi cho ca sau; có thông báo thời gian dự kiến; trường hợp khẩn cấp có đường dây/quy trình riêng không?
+- Trạng thái: OPEN.
+
+**BIZ-2002 — Không xác minh được khách hàng thì xử lý thế nào?**
+- Câu hỏi: Có cho tạo yêu cầu hạn chế; thông tin nào được lưu; khi nào bắt buộc xác thực trước khi tiếp tục?
+- Trạng thái: OPEN.
+
+**BIZ-2003 — Yêu cầu nghiêm trọng hoặc ảnh hưởng nhiều khách hàng thì sao?**
+- Câu hỏi: Ai được tuyên bố Major Incident; ai điều phối, cập nhật khách hàng và xác nhận khôi phục?
+- Trạng thái: OPEN.
+
+**BIZ-2004 — Nhân viên mới được giao nhưng chưa chấp nhận thì ai chịu trách nhiệm?**
+- Câu hỏi: Trách nhiệm có giữ ở owner cũ/queue cho đến khi có xác nhận nhận việc không?
+- Trạng thái: OPEN.
+
+**BIZ-2005 — Bitrix24 và Chat không đồng nhất trạng thái thì ai xử lý?**
+- Câu hỏi: Trường nào là nguồn chuẩn; ai được quyết định sửa; cách ghi audit và xử lý khi không thể tự hòa giải?
+- Trạng thái: OPEN.
+
+**BIZ-2006 — Phát hiện gửi nhầm dữ liệu hoặc vi phạm quyền riêng tư thì sao?**
+- Câu hỏi: Ai nhận cảnh báo, ai điều tra, cách giảm thiểu ảnh hưởng, bảo toàn bằng chứng và thông báo theo chính sách doanh nghiệp?
+- Trạng thái: OPEN.
+
+**BIZ-2007 — Hệ thống bảo trì hoặc ngừng dịch vụ thì quy trình tiếp nhận dự phòng là gì?**
+- Câu hỏi: Khách thấy thông báo nào; yêu cầu mới được ghi nhận ở đâu; làm sao nhập lại/đối soát sau khi phục hồi?
+- Trạng thái: OPEN.
+
+## 10. Bổ sung checklist xác nhận nghiệp vụ
+
+- [ ] Đã duyệt danh mục dịch vụ và phân loại loại yêu cầu.
+- [ ] Đã chốt yêu cầu nào cần phê duyệt trước khi thực hiện.
+- [ ] Đã xác định phạm vi dịch vụ, đầu mối và khác biệt theo hợp đồng/khách hàng.
+- [ ] Mọi trạng thái có owner hoặc vai trò chịu trách nhiệm.
+- [ ] Đã quy định bàn giao ca, nghỉ phép, quá tải và không nhận việc.
+- [ ] Đã quyết định cách xử lý sự cố chung, Ticket trùng, Ticket cha/con và hủy yêu cầu.
+- [ ] Đã chốt thời điểm cập nhật tiến độ, mẫu thông báo và quy trình khiếu nại.
+- [ ] Đã có quy trình sở hữu, phê duyệt, phiên bản hóa và sửa tri thức AI.
+- [ ] Đã thống nhất định nghĩa báo cáo/KPI và quyền xuất dữ liệu.
+- [ ] Đã chốt hiệu lực của thay đổi cấu hình đối với yêu cầu đang mở.
+- [ ] Đã có quy trình ngoài giờ, major incident, lỗi đồng bộ và sự cố dữ liệu.
+- [ ] Đã có quy trình đưa khách hàng/dịch vụ mới vào vận hành.
+- [ ] Các quyết định mới được liên kết tới yêu cầu chức năng, luồng và test nghiệm thu tương ứng.
+
+## 11. Lịch sử thay đổi cập nhật
+
+| Phiên bản | Ngày | Thay đổi |
+|---|---|---|
+| 1.0 | 2026-10-20 | Tập hợp bộ câu hỏi nghiệp vụ và decision register ban đầu. |
+| 1.1 | 2026-10-20 | Bổ sung danh mục dịch vụ, hợp đồng, trách nhiệm/điều phối, quan hệ yêu cầu, giao tiếp/khiếu nại, quản trị tri thức AI, KPI, quản lý thay đổi và tình huống ngoại lệ. |
+
+## 12. Lịch sử thay đổi
 
 | Phiên bản | Ngày | Thay đổi |
 |---|---|---|
 | 1.0 | 2026-10-20 | Tập hợp bộ câu hỏi nghiệp vụ, danh mục quyết định ưu tiên, checklist và mẫu phê duyệt. |
+| 1.1 | 2026-10-20 | Bổ sung các nhóm câu hỏi vận hành thực tế, danh mục dịch vụ, hợp đồng, tri thức AI, KPI và ngoại lệ. |
 
 ---
 **Kết luận:** Đây là bộ câu hỏi để hoàn thiện nghiệp vụ, không phải tuyên bố rằng tất cả chính sách đã được quyết định. Hãy chốt các quyết định P0 trước, sau đó cập nhật tài liệu liên quan và kiểm thử theo quyết định đã duyệt.
