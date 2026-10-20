@@ -72,3 +72,5 @@ Tài liệu 12 tổng hợp 8 luồng chính: tiếp nhận, AI First Response, 
 Đã có baseline nghiệp vụ, chức năng, acceptance tests, implementation blueprint, API/data contract draft, UI/UX design proposal và **hình concept giao diện mẫu**. Mockup chưa phải prototype tương tác được duyệt hoặc code giao diện thực tế. Chưa có schema database/OpenAPI contract cuối cùng trong bộ tài liệu này.
 
 Trước khi chốt UI production và triển khai tích hợp Bitrix24, cần xác minh: framework frontend và browser target; auth/session; realtime transport; role matrix; loại đối tượng Ticket, field/status mapping và quyền API Bitrix24; ma trận nhân sự thực tế; SLA, file policy và kênh phản hồi. Không hard-code các quyết định chưa được duyệt.
+
+- [16 — Requirement Traceability Matrix](docs/16-requirement-traceability-matrix.md) — Lập chỉ mục 73 requirement ID, gợi ý test case theo module và nêu rõ phần cần QA xác minh. Mapping ứng viên chưa phải bằng chứng nghiệm thu.
